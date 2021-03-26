@@ -26,7 +26,7 @@
 5) We need the machine to choose between rock papar scissors
     How? `querySelector` a hack to get us to make this work.
 
-## Initialize state
+## Initialize stategit pus
 
 1) wins:0
 2) total:0
