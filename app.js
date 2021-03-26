@@ -23,6 +23,7 @@ buttonEl.addEventListener('click', () => {
     const computerGuess = cpuKaiBaiBoh();
     const radioInput = document.querySelector('input:checked');
     const userThrow = radioInput.value;
+    console.log(userThrow);
     const result = didUserWin(userThrow, computerGuess);
 
 
@@ -35,11 +36,11 @@ buttonEl.addEventListener('click', () => {
         wins++;
       //  wins = wins+1\ This is the same thing ****
     // wins+=1 This is the same thing****
-        whoWonEl.textContent = wins;
+        whoWonEl.textContent = wins++;
     }
     if (result === 'draw') {
         draws++;
-        drawEl.textContent = draws;
+        drawEl.textContent = draws++;
 
     }
     if (result === 'loss') {

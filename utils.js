@@ -11,9 +11,10 @@ export function didUserWin(player, computer) {
     if (player === 'paper' && computer === 'scissors') return 'loss';
     if (player === 'scissors' && computer === 'paper') return 'win';
     if (player === 'scissors' && computer === 'rock') return 'loss';
-    if (computer === 'scissors' && player === 'rock') return; 'win';
-    if (computer === 'paper' && player === 'rock') return; 'loss';
+    if (player === 'rock' && computer === 'scissors') return 'win';
+    if (player === 'rock' && computer === 'paper') return 'loss';
 
 
 }
+
 
