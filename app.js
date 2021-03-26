@@ -1,7 +1,11 @@
 // import functions and grab DOM elements
-const button =document.getElementById('guess-button');
+const buttonEl = document.getElementById('guess-button');
 const whoWonEl = document.getElementById('who-won');
-const
+const winsEl = document.getElementById('wins');
+const drawEl = document.getElementById('draw');
 // initialize state
+
+let wins = 0;
+let total = 0;
 
 // set event listeners to update state and DOM

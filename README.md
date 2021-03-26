@@ -8,7 +8,8 @@
 6) Find all the 'events' (user clicks, form submit, etc) in your app. Ask one by one, "What happens when" for each of these events.
 7) Think about how to validate each of your steps
 
-
+## Downloading images
+1. I want to find the three images I am going to use. 
 ## rock paper scissors app
 
 
@@ -41,4 +42,3 @@
     -increment the total
     -increment the win, if the use got it right. 
     -display new values for total, wins, and losses. 
-    
