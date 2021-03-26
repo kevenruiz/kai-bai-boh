@@ -1,23 +1,73 @@
 // import functions and grab DOM elements
-import { cpuKaiBaiBoh } from '../utils.js';
+import { cpuKaiBaiBoh, didUserWin } from '../utils.js';
+
 
 const buttonEl = document.getElementById('guess-button');
-const whoWonEl = document.getElementById('who-won');
-const winsEl = document.getElementById('wins');
+const whoWonEl = document.getElementById('you-win');
+const loseEl = document.getElementById('you-lose');
 const drawEl = document.getElementById('draw');
 // initialize state
 
+
+
+
+
 let wins = 0;
-let total = 0;
+let draws = 0;
+let losses = 0;
 
 // set event listeners to update state and DOM
 
 buttonEl.addEventListener('click', () => {
-    const randomNumber = Math.ceil(Math.random() * 3);
-    const actualGuess = cpuKaiBaiBoh(randomNumber);
-    console.log(actualGuess);
-    //
+    
+    const computerGuess = cpuKaiBaiBoh();
+    const radioInput = document.querySelector('input:checked');
+    const userThrow = radioInput.value;
+    const result = didUserWin(userThrow, computerGuess);
 
+
+
+
+    console.log(result, computerGuess, userThrow);
+
+    
+    if (result === 'win') {
+        wins++;
+      //  wins = wins+1\ This is the same thing ****
+    // wins+=1 This is the same thing****
+        whoWonEl.textContent = wins;
+    }
+    if (result === 'draw') {
+        draws++;
+        drawEl.textContent = draws;
+
+    }
+    if (result === 'loss') {
+        losses++;
+        loseEl.textContent = losses++;
+    }
+   
+    
+    
+
+   // else if (actualGuess === 'you-lose') {
+       //     return whoWonDiv.textContent = losses++;
+
+    //  if (actualGuess === 'draw') {
+      //          return whoWonDiv.textContent = draw++;
+
+
+   
+
+    
+
+
+   
+    //
+    
+    //if (didUserWin(cpuKaiBaiBoh) => {
+
+    
 
 });
 

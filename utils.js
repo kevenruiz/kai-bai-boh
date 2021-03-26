@@ -1,10 +1,8 @@
-export function cpuKaiBaiBoh(someNumber) {
-    if (someNumber === 1) return 'scissors';
-    if (someNumber === 2) return 'rock';
-
-    return 'paper';
-
-
+export function cpuKaiBaiBoh() {
+    const randomNumber = Math.ceil(Math.random() * 3);
+    if (randomNumber === 1) return 'scissors';
+    if (randomNumber === 2) return 'rock';
+    if (randomNumber === 3) return 'paper';
 }
 
 export function didUserWin(player, computer) {
