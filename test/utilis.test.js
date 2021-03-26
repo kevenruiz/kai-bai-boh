@@ -7,7 +7,7 @@ const test = QUnit.test;
 test('if it is a number less than .334, return rock, if its a number greater than .335 but less than .667, return paper, if greater than .668 return with scissors', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = rock;
+    const expected = 'rock';
 
     //Act 
     // Call the function you're testing and set the result to a const
@@ -21,7 +21,7 @@ test('if it is a number less than .334, return rock, if its a number greater tha
 test('if it is a number less than .334, return rock, if its a number greater than .335 but less than .667, return paper, if greater than .668 return with scissors', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = paper;
+    const expected = 'paper';
 
     //Act 
     // Call the function you're testing and set the result to a const
@@ -35,7 +35,7 @@ test('if it is a number less than .334, return rock, if its a number greater tha
 test('if it is a number less than .334, return rock, if its a number greater than .335 but less than .667, return paper, if greater than .668 return with scissors', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = scissors;
+    const expected = 'scissors';
 
     //Act 
     // Call the function you're testing and set the result to a const
