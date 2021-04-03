@@ -5,6 +5,21 @@ import { didUserWin } from '../utils.js';
 
 const test = QUnit.test;
 
+
+test('if it is a number is 1, expect paper', (expect) => {
+    //Arrange
+    // Set up your arguments and expectations
+    const expected = 'scissors';
+
+    //Act 
+    // Call the function you're testing and set the result to a const
+    const actual = cpuKaiBaiBoh();
+
+    //Expect
+    // Make assertions about what is expected versus the actual result
+    expect.equal(actual, expected);
+});
+
 test('if the number is 2, expect rock', (expect) => {
     //Arrange
     // Set up your arguments and expectations
@@ -12,7 +27,7 @@ test('if the number is 2, expect rock', (expect) => {
 
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = cpuKaiBaiBoh(2);
+    const actual = cpuKaiBaiBoh();
 
     //Expect
     // Make assertions about what is expected versus the actual result
@@ -26,26 +41,13 @@ test('if the numebr is 3, expect paper', (expect) => {
 
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = cpuKaiBaiBoh(3);
+    const actual = cpuKaiBaiBoh();
 
     //Expect
     // Make assertions about what is expected versus the actual result
     expect.equal(actual, expected);
 });
 
-test('if it is a number is 1, expect paper', (expect) => {
-    //Arrange
-    // Set up your arguments and expectations
-    const expected = 'scissors';
-
-    //Act 
-    // Call the function you're testing and set the result to a const
-    const actual = cpuKaiBaiBoh(1);
-
-    //Expect
-    // Make assertions about what is expected versus the actual result
-    expect.equal(actual, expected);
-});
 
 
 

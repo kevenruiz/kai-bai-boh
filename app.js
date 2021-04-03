@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-import { cpuKaiBaiBoh, didUserWin } from '../utils.js';
+import { cpuKaiBaiBoh, didUserWin } from './utils.js';
 
 
 const buttonEl = document.getElementById('guess-button');
