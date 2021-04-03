@@ -6,7 +6,7 @@ import { didUserWin } from '../utils.js';
 const test = QUnit.test;
 
 
-test('if it is a number is 1, expect paper', (expect) => {
+/*test('if it is a number is 1, expect paper', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = 'scissors';
@@ -48,7 +48,7 @@ test('if the numebr is 3, expect paper', (expect) => {
     expect.equal(actual, expected);
 });
 
-
+*/
 
 
 

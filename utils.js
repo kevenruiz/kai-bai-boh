@@ -1,3 +1,4 @@
+
 export function cpuKaiBaiBoh() {
     const randomNumber = Math.ceil(Math.random() * 3);
     if (randomNumber === 1) return 'scissors';
@@ -16,5 +17,4 @@ export function didUserWin(player, computer) {
 
 
 }
-
 

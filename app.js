@@ -1,7 +1,7 @@
 // import functions and grab DOM elements
 import { cpuKaiBaiBoh, didUserWin } from './utils.js';
 
-
+const resetEl = document.getElementById('reset-button');
 const buttonEl = document.getElementById('guess-button');
 const whoWonEl = document.getElementById('you-win');
 const loseEl = document.getElementById('you-lose');
@@ -48,29 +48,29 @@ buttonEl.addEventListener('click', () => {
         loseEl.textContent = losses++;
     }
    
-    
-    
 
-   // else if (actualGuess === 'you-lose') {
-       //     return whoWonDiv.textContent = losses++;
-
-    //  if (actualGuess === 'draw') {
-      //          return whoWonDiv.textContent = draw++;
+    // I MAKE THE RESET BUTTON, I COULDNT GET IT TO WORK. 
 
 
-   
+    /* resetEl.addEventListener('click', () => {
+        const resetEl = result.value;
+        result.value = 0;
+        console.log(result.value)
+    });
 
-    
+
+    */
 
 
-   
-    //
-    
-    //if (didUserWin(cpuKaiBaiBoh) => {
+ 
 
     
+
+
 
 });
+
+
 
 // 1) User clicks submit
 //   -randomly pick a computer throw ('rock' | 'paper' | 'Scissors')
